@@ -46,5 +46,6 @@ __MACOSX/*
 *.sublime
 /public/
 /dist/
+/src/css/app.css
 node_modules/
 bower_components/
