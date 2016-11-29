@@ -1,0 +1,52 @@
+<!doctype html>
+<html class="no-js" lang="en" ng-app="store">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Title</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/app.min.css">
+    </head>
+    <body>
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <noscript>
+    	Please Turn on Javascript to see this and many great pages on the web.
+    </noscript>
+    <div class="body-page">
+
+        <h1 class="title">Buy your Gems here.</h1>
+
+        <ul class="list-group" ng-controller="StoreController as gemStore">
+            <li class="list-group-item" ng-repeat="gem in gemStore.gems | orderBy:'price'">
+                <h3>{{gem.name | uppercase}}</h3>
+                <h5>{{gem.price | currency}}</h5>
+                <p><small>{{gem.description}}</small></p>
+                <span ng-click="tab = 1">Tab 1</span>
+                <div>Tab: {{tab}} Foo: {{foo}}</div>
+            </li>
+        </ul>
+
+        <h6>AB Tab{{tab}}</h6>
+        <div ng-controller="whyTho" ng-init="tab = 'chris'">
+                <span ng-click="tab = 1">Tab 1</span>
+                <span ng-click="tab = 2">Tab 2</span>
+                <span ng-click="tab = 3">Tab 3</span>
+                <span ng-click="foo = 1">Foo 1</span>
+                <span ng-click="foo = 2">Foo 2</span>
+                <span ng-click="foo = 3">Foo 3</span> 
+        Tab: {{tab}} Foo: {{foo}}
+        </div>
+
+    </div>
+    <!-- .body--page -->
+	<script src="js/vendor.min.js"></script>
+    <script src="js/app.js"></script>
+    </body>
+</html>

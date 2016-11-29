@@ -1,0 +1,26 @@
+{
+  "name": "freshstart",
+  "description": "A fresh start for a new web(page,app,etc). Simple boilerplate gulp environment",
+  "main": "gulpfile.js",
+  "authors": [
+    "chris@chrisamador.me"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/chrisamador/freshstart",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.9"
+  },
+  "devDependencies": {
+    "modernizer": "^2.8.2",
+    "bootstrap": "^3.3.7",
+    "respond": "^1.4.2"    
+  }
+}

@@ -1,0 +1,58 @@
+// @import "reset";
+@import "../../bower_components/bootstrap/less/bootstrap";
+
+@gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f;
+
+/* --------------------------------
+	_MediaQuerysReference
+----------------------------------*/
+
+// Less than the Grid Float Breakpoint
+@max-breakpoint: ~"(max-width: @{grid-float-breakpoint-max})";
+// Greater than the Grid Float Breakpoint
+@min-breakpoint: ~"(min-width: @{grid-float-breakpoint})";
+
+// Only Extra-small
+@only-xs: ~"(max-width: @{screen-xs-max})";
+
+// Small and less
+@max-sm: ~"(max-width: @{screen-sm-max})";
+// Only Small
+@only-sm: ~"(min-width: @{screen-sm-min}) and (max-width: @{screen-sm-max})";
+// Small and greater
+@min-sm: ~"(min-width: @{screen-sm-min})";
+
+// Medium and less
+@max-md: ~"(max-width: @{screen-md-max})";
+// Only Medium
+@only-md: ~"(min-width: @{screen-md-min}) and (max-width: @{screen-md-max})";
+// Medium and greater
+@min-md: ~"(min-width: @{screen-md-min})";
+
+// Only Large
+@only-lg: ~"(min-width: @{screen-lg-min})";
+
+input:focus{
+	outline: none;
+}
+
+.body-page{
+	padding: 1em;
+}
+
+.title{
+	margin-top: 0;
+}
+
+@headings-font-weight: bold;
